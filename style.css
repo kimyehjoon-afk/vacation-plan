@@ -1,0 +1,569 @@
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    background:#f7f7fc;
+
+    color:#222;
+
+    font-family:"Pretendard",sans-serif;
+
+}
+
+
+
+.container{
+
+    width:100%;
+
+    max-width:520px;
+
+    margin:auto;
+
+    padding:20px 16px 40px;
+
+}
+
+
+
+/* 상단 */
+
+.hero{
+
+    text-align:center;
+
+}
+
+
+.hero h1{
+
+    font-size:42px;
+
+    margin:10px 0 5px;
+
+    font-weight:800;
+
+    color:#7c3aed;
+
+}
+
+
+.hero p{
+
+    color:#888;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* 프로필 */
+
+.profile{
+
+    margin-top:25px;
+
+    padding:18px;
+
+    background:white;
+
+    border-radius:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+
+.profile h3{
+
+    margin:0;
+
+}
+
+
+.profile p{
+
+    margin:5px 0 0;
+
+}
+
+
+
+.level{
+
+    background:#ede9fe;
+
+    color:#7c3aed;
+
+    padding:12px 18px;
+
+    border-radius:20px;
+
+    font-weight:800;
+
+}
+
+
+
+
+
+
+
+/* 디데이 */
+
+.dday-card{
+
+    margin-top:20px;
+
+    padding:25px;
+
+    border-radius:30px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #ddd6fe,
+        #fbcfe8
+    );
+
+    box-shadow:0 10px 30px rgba(124,58,237,.15);
+
+}
+
+
+
+.dday-card h2{
+
+    font-size:55px;
+
+    margin:0;
+
+    color:#6d28d9;
+
+}
+
+
+.dday-card span{
+
+    color:#555;
+
+}
+
+
+
+
+
+
+
+/* 카드 */
+
+.card{
+
+    margin-top:18px;
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:22px;
+
+    box-shadow:
+
+    0 8px 25px rgba(0,0,0,.07);
+
+
+    animation:up .5s ease;
+
+}
+
+
+
+@keyframes up{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+.card h2{
+
+    font-size:22px;
+
+    margin-top:0;
+
+}
+
+
+
+
+
+
+
+/* 진행률 */
+
+.progress-bar{
+
+    width:100%;
+
+    height:14px;
+
+    background:#eee;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progress{
+
+    height:100%;
+
+    width:0%;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    border-radius:20px;
+
+    transition:.5s;
+
+}
+
+
+#progressText{
+
+    text-align:right;
+
+    color:#7c3aed;
+
+    font-weight:700;
+
+}
+
+
+
+
+
+
+
+/* 할 일 */
+
+#todoList{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+
+.todo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px;
+
+    background:#f8fafc;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+
+
+.todo:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+
+.todo input{
+
+    width:22px;
+
+    height:22px;
+
+    accent-color:#8b5cf6;
+
+}
+
+
+
+.todo span{
+
+    font-size:16px;
+
+}
+
+
+
+
+
+
+
+/* 목표 */
+
+.goal-list{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+.goal-list li{
+
+    padding:15px;
+
+    background:#f8fafc;
+
+    border-radius:16px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+
+
+/* 사진 */
+
+.photo-box{
+
+    width:100%;
+
+    height:260px;
+
+    margin-top:15px;
+
+    background:#f8fafc;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+}
+
+
+
+.photo-box img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+input[type="file"]{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:10px;
+
+    background:#f1f5f9;
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+
+
+/* 통계 */
+
+.stats{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+}
+
+
+
+.stats div{
+
+    flex:1;
+
+    background:#f8fafc;
+
+    padding:15px 5px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+
+
+.stats h3{
+
+    font-size:12px;
+
+    color:#888;
+
+}
+
+
+
+.stats p{
+
+    color:#7c3aed;
+
+    font-weight:800;
+
+    font-size:20px;
+
+}
+
+
+
+
+
+
+
+/* 기분 */
+
+.mood{
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+
+
+.mood button{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f1f5f9;
+
+    font-size:25px;
+
+}
+
+
+
+
+
+
+
+/* 버튼 */
+
+button{
+
+    background:#8b5cf6;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 20px;
+
+    border-radius:15px;
+
+    font-weight:700;
+
+}
+
+
+
+button:active{
+
+    transform:scale(.9);
+
+}
+
+
+
+
+
+
+
+footer{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#999;
+
+    font-size:14px;
+
+}
